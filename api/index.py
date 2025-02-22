@@ -35,6 +35,21 @@ def require_api_key(f):
         return f(*args, **kwargs)
     return decorated_function
 
+@app.route("/", methods=["GET"])
+def home():
+    return """
+    <h1>Azure Translator OpenAI Compatible API</h1>
+    <p>This is an OpenAI API-compatible interface specifically designed for text translation needs.</p>
+    <p>GitHub Repository: <a href="https://github.com/winniesi/azure-translate-to-openai">https://github.com/winniesi/azure-translate-to-openai</a></p>
+    <p>Features:</p>
+    <ul>
+        <li>OpenAI API-compatible interface</li>
+        <li>Reliable text translation using Azure Translator service</li>
+        <li>Currently supports Chinese to English translation</li>
+        <li>Perfect for use with tools like Cherry Studio</li>
+    </ul>
+    """
+
 @app.route("/v1/models", methods=["GET"])
 def list_models():
     return jsonify(
