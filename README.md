@@ -1,6 +1,6 @@
 # Azure Translator OpenAI Compatible API
 
-这个项目提供了一个与 OpenAI API 兼容的接口，专门用于处理文本翻译需求。它解决了在使用 OpenAI 兼容客户端（如 Cherry Studio）进行翻译时可能遇到的问题，即有时翻译内容会被误识别为 prompt 指令而非待翻译文本。
+这个项目提供了一个与 OpenAI API 兼容的接口，专门用于处理文本翻译需求。解决了在使用 OpenAI 兼容客户端（如 Cherry Studio）进行翻译时可能遇到的问题，即有时翻译内容会被误识别为 prompt 指令而非待翻译文本。
 
 ## 主要功能
 
@@ -28,12 +28,8 @@ AZURE_TRANSLATOR_LOCATION=your_azure_translator_location
 2. 使用 `OPENAI_API_KEY` 作为认证密钥
 3. 发送翻译请求时，使用标准的 OpenAI chat completions 格式
 
-# Azure Translator OpenAI Compatible API
-
-这个项目提供了一个与 OpenAI API 兼容的接口，专门用于处理文本翻译需求。它解决了在使用 OpenAI 兼容客户端（如 Cherry Studio）进行翻译时可能遇到的问题，即有时翻译内容会被误识别为 prompt 指令而非待翻译文本。
-
 ## 一键部署
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyour-username%2Fyour-repo&env=OPENAI_API_KEY,AZURE_TRANSLATOR_KEY,AZURE_TRANSLATOR_ENDPOINT,AZURE_TRANSLATOR_LOCATION)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwinniesi%2Fazure-translate-to-openai&env=OPENAI_API_KEY,AZURE_TRANSLATOR_KEY,AZURE_TRANSLATOR_ENDPOINT,AZURE_TRANSLATOR_LOCATION)
 
 部署时需要配置环境变量。
